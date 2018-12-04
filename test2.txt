@@ -1,0 +1,221 @@
+module test(in0, in1, in2, out0, out1, out2);
+
+input in0;
+input [2:0] in1, in2;
+output [6:0] out0, out1, out2;
+reg [6:0] out0, out1, out2;
+
+1111111
+0111111
+
+1000000
+
+1111001
+0100100
+0110000
+
+0011001
+0010010
+0000010
+
+1111000
+0000000
+0010000
+
+
+
+
+always @ ({in0, in1, in2});
+begin
+  case(in0)
+    1'b0:
+    begin
+      if((in1+in2)==1)
+        begin
+          out0=7'b1111001;
+          out1=7'b1111111;
+          out2=7'b1111111;
+        end
+      else if((in1+in2)==2)
+        begin
+          out0=7'b0100100;
+          out1=7'b1111111;
+          out2=7'b1111111;
+        end
+      else if((in1+in2)==3)
+        begin
+          out0=7'b0110000;
+          out1=7'b1111111;
+          out2=7'b1111111;
+        end
+      else if((in1+in2)==4)
+        begin
+          out0=7'b0011001;
+          out1=7'b1111111;
+          out2=7'b1111111;
+        end
+      else if((in1+in2)==5)
+        begin
+          out0=7'b0010010;
+          out1=7'b1111111;
+          out2=7'b1111111;
+        end
+      else if((in1+in2)==6)
+        begin
+          out0=7'b0000010;
+          out1=7'b1111111;
+          out2=7'b1111111;
+        end
+      else if((in1+in2)==7)
+        begin
+          out0=7'b1111000;
+          out1=7'b1111111;
+          out2=7'b1111111;
+        end
+      else if((in1+in2)==8)
+        begin
+          out0=7'b0000000;
+          out1=7'b1111111;
+          out2=7'b1111111;
+        end
+      else if((in1+in2)==9)
+        begin
+          out0=7'b0010000;
+          out1=7'b1111111;
+          out2=7'b1111111;
+        end
+      else if((in1+in2)==10)
+        begin
+          out0=7'b1000000;
+          out1=7'b1111001;
+          out2=7'b1111111;
+        end
+      else if((in1+in2)==11)
+        begin
+          out0=7'b1111001;
+          out1=7'b1111001;
+          out2=7'b1111111;
+        end
+      else if((in1+in2)==12)
+        begin
+          out0=7'b0100100;
+          out1=7'b1111001;
+          out2=7'b1111111;
+        end
+      else if((in1+in2)==13)
+        begin
+          out0=7'b0110000;
+          out1=7'b1111001;
+          out2=7'b1111111;
+        end
+      else if((in1+in2)==14)
+        begin
+          out0=7'b0011001;
+          out1=7'b1111001;
+          out2=7'b1111111;
+        end
+      else
+        begin
+          out0=7'b1000000;
+          out1=7'b1111111;
+          out2=7'b1111111;
+        end
+    end
+    
+    1'b1:
+    begin
+      if((in1+in2)==7)
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+      else if((in1+in2)==6)
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+      else if((in1+in2)==5)
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+      else if((in1+in2)==4)
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+      else if((in1+in2)==3)
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+      else if((in1+in2)==2)
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+      else if((in1+in2)==1)
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+      else if((in1+in2)==-1)
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+      else if((in1+in2)==-2)
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+      else if((in1+in2)==-3)
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+      else if((in1+in2)==-4)
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+      else if((in1+in2)==-5)
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+      else if((in1+in2)==-6)
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+      else if((in1+in2)==-7)
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+      else
+        begin
+          out0=7'b
+          out1=7'b
+          out2=7'b
+        end
+    end
+  endcase
+end
+
+endmodule
